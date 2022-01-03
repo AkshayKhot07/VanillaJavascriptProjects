@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="main-container">
+        <form id="form">
+          <h2>Register With Us</h2>
+          <ul>
+            <li id="userNameLi">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                class="form-input"
+                placeholder="Enter username"
+              />
+              <div id="username-error-message">
+                Username must be atleast 3 characters
+              </div>
+            </li>
+
+            <li>
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="Enter email"
+              />
+              <div id="emailid-error-message">Email is not valid</div>
+            </li>
+
+            <li>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-input"
+                placeholder="Enter password"
+              />
+              <div id="password-error-message">
+                Password must be at least 6 characters
+              </div>
+            </li>
+
+            <li>
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm-password"
+                id="confirm-password"
+                class="form-input"
+                placeholder="Enter password again"
+              />
+              <div id="password2-error-message">Password2 is required</div>
+            </li>
+
+            <li>
+              <button class="submit-button form-input">Submit</button>
+            </li>
+          </ul>
+        </form>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
